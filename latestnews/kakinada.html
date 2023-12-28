@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakinada  Mangrove Forest</title>
+    <link rel="stylesheet" href="../otherpages/untitled folder/swiper.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style type="text/css">
+        body{
+            background-color: white;
+          
+        }
+        .margin{
+          margin-left: 25px;
+            margin-right: 25px;
+        }
+        p{
+            font-family: Times;
+            font-style: italic;
+            font-size: 17pt;
+            text-align: justify;
+            text-indent: 100px;
+        } 
+        h1{
+            font-family: Times;
+            font-style: italic;
+            font-size: 25pt;
+            text-align: center;
+        }
+        h2{
+            font-family: Times;
+            font-style: italic;
+            font-size: 22pt;
+        }
+        img{
+            align-items: center;
+        }
+        .login .btn-signup
+         {
+        background: var(--primary-gradient);
+        float: right;
+        margin: .8rem;
+        padding: .5rem 1.5rem;
+        border: none;
+        border-radius: 4rem;
+        background: #2b5876;
+        color: whitesmoke;
+        font-size: .7rem;
+        font-family: var(--Montserrat);
+        box-shadow: var(--primary-shadow);
+        cursor: pointer;
+        }
+
+
+
+
+
+ .title{
+   position:absolute;
+   top: 15%;
+   left: 52%;
+   transform: translate(-50%,-50%);
+}
+.title h1{
+     font-size: 70px;
+      color:white;
+}
+
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+.slidebar{
+   position: fixed;
+   left: -250px;
+   width: 250px;
+   height: 100%;
+   background: #042331;
+   transition: all .5s ease;
+}
+.slidebar header{
+    font-size: 22px;
+     color: white;
+   text-align: left;
+   line-height: 70px;
+    background: #063146;
+   user-select:none;
+}
+.slidebar ul a{
+  display: block;
+  height: 100%;
+ width:100%;
+  line-height: 65px;
+   font-size: 20px;
+  color: white;
+  padding-left: 40px;
+   box-sizing: border-box;
+   border-top: 1px solid rgba(255, 255, 255, .1);
+   border-bottom: 1px solid black;
+   transition:.4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+#check{
+  display:  none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointers;
+  background: #042331;
+  border-radius: 3px;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+   font-size: 35px;
+   color: white;
+  padding: 6px 12px;
+   transition: all .5s;
+}
+label #cancel{
+   z-index: 1111;
+   left: -195px;
+   top: 17px;
+   font-size: 30px;
+   color: #0a5275;
+   padding: 4px 9px;
+   transition: all .5s ease;
+}
+#check:checked~ .slidebar{
+  left: 0;
+}
+#check:checked~ label #btn{
+  left: 250px;
+   opacity: 0;
+   pointer-events: none;
+}
+#check:checked~ label #cancel{
+  left: 195px;
+}
+#check:checked~ section{
+ margin-left: 250px;
+}
+
+
+
+.swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 450px;
+    background: white;
+  }
+  .swiper-slide .imgbox
+  {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+  }
+  .swiper-slide .imgbox img{
+      width: 100%;
+  }
+  .swiper-slide .details
+  {
+      box-sizing: border-box;
+      padding: 20px;
+  }
+  .swiper-slide .details h3
+  {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 20px;
+  }
+  .swiper-slide .details h3 span{
+      font-size: 16px;
+      color: rgb(34, 32, 32);
+  }
+
+  button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    background-color: skyblue;
+}
+</style>
+</head>
+<body>
+  <div class="col login">
+    <a href="../loginpage/index.html"><button type="button" class="btn btn-signup">Sign Up</button></a>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="slidebar">
+      <header>&nbsp; THE BUSINESSS</header>
+      <ul >
+   <li><a href="../index.html"><i class="fas fa-home" >HOME</i></a></li>
+   <li><a href="../index.html#articles" ><i class="fas fa-newspaper" >ARTICLE</i></a></li>
+   <li><a href="../category/index.html" ><i class="fas fa-briefcase">CATEGORY</i></a></li>
+   <li><a href="../pages/index.html" ><i class="fas fa-briefcase">PAGES</i></a></li>
+   <li><a href="../index.html#late" ><i class="fas fa-briefcase">LATEST NEWS</i></a></li>
+   <li><a href="../intrested/formpage.html" ><i class="fas fa-briefcase">INTRESTED!</i></a></li>
+   <li><a href="../feedback/formpage.html" ><i class="fas fa-briefcase">FEEDBACK</i></a></li>
+   <li><a href="https://www.instagram.com/thebusinesss.in/" ><i class="fas fa-ad">INSTAGRAM</i></a></li>
+   <li><a href="../index.html#contactus"><i class="fas fa-mail-bulk" >CONTACT</i></a></li> 
+               </ul>
+       
+             </div>
+
+
+
+    </div> 
+    <br><br><br><br><br>
+    <div class="margin">
+    <h1>AP GOVERNMENT DESTROYING MANGROVES FOR HOUSING SCHEME near Kakinada:</h1><br><br>
+    <center><img src="./photo/mangrove.jpeg" width="380px" height="285px"></center><br><br>
+    <p>Government of Andhra Pradesh has announced a scheme “PEDALANDARIKI ILLU” 
+        which means houses for all the poor. For the sake of allocating houses for 
+        the poor, it is not at all fair to destroy the pristine mangroves. Might be
+         they have forgotten these pristine mangroves saved lives of people in Kakinada 
+         city from 7 cyclones and from most terrible tsunami called “PETHAI”. The government cannot wash off its hands by stating they are unaware of the cutting away of the forest or they are busy with corona relief activities. We all know that most of the mangroves in east coast of India were destroyed, now it is our responsibility to protect the mangroves which are going to destroy. In this connection, the fishermen protection committee, Kakinada., wrote a letter on the 16th march 2020 to District Forest Officer about the facts behind the mangroves.
+        GOVERNMENTT THINKING THEY ARE DOING BOON TO THE PEOPLE BUT IT IS BANE TO THE NATURE.</p>
+</div>
+            
+          
+    <br><br><br>
+<h1>News</h1>
+<br><br>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../latestnews/photo/forbes.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>FORBES ACCUSED KYLIE JENNER ABOUT HER WEALTH <br><span>June 04, 2020</span></h3>
+          <center><a href="../latestnews/forbes.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../latestnews/photo/tvsshowroom.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>TVS MOTOR IS CUTTING SALARIES<br><span>May 28, 2020</span></h3>
+          <center><a href="../latestnews/tvs.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../latestnews/photo/markjukerburgfb.jpeg" width="300" height="300">
+      </div>
+      <div class="details">
+          <h3>MARK ZUCKERBERG BECOMES THE WORLD’S 3rd RICHEST PERSON <br><span>May 27, 2020</span></h3>
+        <center><a href="../latestnews/mark.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+  </div>
+  <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+    <div class="imgbox">
+      <img src="../latestnews/photo/coronabulding.jpeg" width="300" height="300">
+    </div>
+    <div class="details">
+        <h3>HOW THE PANDEMIC ALTERING THE URBAN PLANNING IN INDIA <br><span>May 27, 2020</span></h3>
+      <center><a href="../latestnews/indianurbanplanning.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+       
+    </div>
+</div>
+<div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+  <div class="imgbox">
+    <img src="../latestnews/photo/uberphone.jpeg" width="300" height="300">
+  </div>
+  <div class="details">
+      <h3>WHAT ARE THE IMPACTS ON CUTTING JOBS IN UBER<br><span>May 26, 2020</span></h3>
+    <center><a href="../latestnews/uberjobs.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+     
+  </div>
+</div>
+<div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+  <div class="imgbox">
+    <img src="../latestnews/photo/cognizant.jpeg" width="300" height="300">
+  </div>
+  <div class="details">
+      <h3>WHY COGNIZANT CUTTING JOBS? <br><span>May 26, 2020</span></h3>
+    <center><a href="../latestnews/cogniznt.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+     
+  </div>
+</div>
+<div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+  <div class="imgbox">
+    <img src="../latestnews/photo/missing.jpeg" width="300" height="300">
+  </div>
+  <div class="details">
+      <h3>RESOUNDING ENDORSEMENT OF THE THEATRICAL EXPERIENCE? <br><span>May 25, 2020</span></h3>
+    <center><a href="../latestnews/thereticalcovid.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+     
+  </div>
+</div>
+<div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+  <div class="imgbox">
+    <img src="../latestnews/photo/airtelbarti.jpeg" width="300" height="300">
+  </div>
+  <div class="details">
+      <h3>AIRTEL PARENT RAISES $1.15B<br><span>May 25, 2020</span></h3>
+    <center><a href="../latestnews/airtelbarti.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+     
+  </div>
+</div>
+<div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+  <div class="imgbox">
+    <img src="../latestnews/photo/jaipur.jpeg" width="300" height="300">
+  </div>
+  <div class="details">
+      <h3>JAIPUR - SLEEPLESS NIGHTS <br><span>May 24, 2020</span></h3>
+    <center><a href="../latestnews/jaipur.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+     
+  </div>
+</div>
+<div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+  <div class="imgbox">
+    <img src="../latestnews/photo/olaname.jpeg" width="300" height="300">
+  </div>
+  <div class="details">
+      <h3>OLA ELECTRIC ACQUIRES NETHERLANDS BASED SCOOTER MAKER- ETERGO<br><span>May 24, 2020</span></h3>
+    <center><a href="../latestnews/olaelectric.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+     
+  </div>
+</div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../latestnews/photo/rel.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>FOUR DEALS IN FOUR WEEKS <br><span>May 23, 2020</span></h3>
+          <center><a href="../latestnews/reliancedeals.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="./photo/swiggydel.jpeg " width="300" height="250">
+        </div>
+        <div class="details">
+            <h3> WHY SWIGGY IS NOT MUCH DELIVERING THE FOOD COMPARED WITH ZOMATO?<br><span>May 19, 2020</span></h3>
+          <center><a href="../latestnews/swiggydelivery.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="./photo/swig.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>SWIGGY’S CO-FOUNDER AND CTO RAHUL JAIMINI QUITS TO JOIN PESTO TECH <br><span>May 19, 2020</span></h3>
+          <center><a href="../latestnews/swiggy.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="./photo/nm 10.26.04 AM.jpeg " width="300" height="250">
+        </div>
+        <div class="details">
+            <h3>INDIAN GOVERNMENT ACTION ON PUBLIC SECTOR COMPANIES <br><span>May 18, 2020</span></h3>
+          <center><a href="../latestnews/indiangov.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="./photo/lockdown4.jpeg " width="300" height="250">
+        </div>
+        <div class="details">
+            <h3>LOCKODWN 4.0 IS HERE <br><span>May 17, 2020</span></h3>
+          <center><a href="../latestnews/union.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="./photo/bank.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>CORONAVIRUS OUTBREAK: $1B FUND FOR INDIA FROM WORLD BANK<br><span>May 16, 2020</span></h3>
+          <center><a href="../latestnews/worldbank.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+            </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="./photo/zomato.jpeg " width="300" height="250">
+        </div>
+        <div class="details">
+            <h3>ZOMATO IS CUTTING JOBS IN THIS QUARANTINE <br><span>May 16, 2020</span></h3>
+          <center><a href="../latestnews/zomato.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/latestpic/ludo.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>LUDOKING RANKS TOP DURING LOCKDOWN<br><span>May 14, 2020</span></h3>
+          <center><a href="../latestnews/ludo.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/latestpic/locker.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>BOIS LOCKER ROOM <br><span>May 04, 2020</span></h3>
+          <center><a href="../latestnews/lockerroom.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/latestpic/maruti.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3> MARUTI SUZUKI RECORDED ZERO SALES!!<br><span>May 04, 2020</span></h3>
+          <center><a href="../latestnews/maruti.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/latestpic/locker.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>BOIS LOCKER ROOM <br><span>May 04, 2020</span></h3>
+          <center><a href="../latestnews/lockerroom.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../assets/latestpic/NOKIA.JPEG" width="300" height="300">
+      </div>
+      <div class="details">
+          <h3>AIRTEL SIGNS WITH NOKIA TO BRING 5G ERA <br><span>May 04, 2020</span></h3>
+        <center><a href="../latestnews/maruti.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+  </div>
+          <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+            <div class="imgbox">
+              <img src="../assets/latestpic/whatsapp 7.40.55 PM.jpeg" width="300" height="300">
+            </div>
+            <div class="details">
+                <h3> Whatsapp Pay<br><span>May 04, 2020</span></h3>
+              <center><a href="../latestnews/whatsapppay.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+               
+            </div>
+        </div>    
+     
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/latestpic/apple.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3> APPLE HAS $192.8 BN CASH ON HAND IN Q2; DOWN 7.4% FROM Q1<br><span>May 04, 2020</span></h3>
+          <center><a href="../latestnews/apple.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../latestnews/photo/bajaj 9.46.44 PM.jpeg" width="300" height="300">
+      </div>
+      <div class="details">
+          <h3>BAJAJ AUTO ZERO SALES!!<br><span>May 04, 2020</span></h3>
+        <center><a href="../latestnews/bajaj.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+  </div>
+    
+      
+      </div>
+</div>
+
+
+
+
+      <script type="text/javascript" src="../otherpages/untitled folder/swiper.min.js"></script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+
+</body>
+</html>

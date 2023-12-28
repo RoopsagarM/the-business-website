@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>disasters 2020</title>
+    <link rel="stylesheet" href="../otherpages/untitled folder/swiper.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style type="text/css">
+        body{
+            background-color: white;
+        }
+        .margin{
+          margin-left: 25px;
+            margin-right: 25px;
+        }
+        p{
+            font-family: Times;
+            font-style: italic;
+            font-size: 17pt;
+            text-align: justify;
+            text-indent: 100px;
+        } 
+        h1{
+            font-family: Times;
+            font-style: italic;
+            font-size: 25pt;
+            text-align: center;
+        }
+        h2{
+            font-family: Times;
+            font-style: italic;
+            font-size: 22pt;
+        }
+        img{
+            align-items: center;
+        }
+        .login .btn-signup
+         {
+        background: var(--primary-gradient);
+        float: right;
+        margin: .8rem;
+        padding: .5rem 1.5rem;
+        border: none;
+        border-radius: 4rem;
+        background: #2b5876;
+        color: whitesmoke;
+        font-size: .7rem;
+        font-family: var(--Montserrat);
+        box-shadow: var(--primary-shadow);
+        cursor: pointer;
+        }
+
+
+
+
+
+ .title{
+   position:absolute;
+   top: 15%;
+   left: 52%;
+   transform: translate(-50%,-50%);
+}
+.title h1{
+     font-size: 70px;
+      color:white;
+}
+
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+.slidebar{
+   position: fixed;
+   left: -250px;
+   width: 250px;
+   height: 100%;
+   background: #042331;
+   transition: all .5s ease;
+}
+.slidebar header{
+    font-size: 22px;
+     color: white;
+   text-align: left;
+   line-height: 70px;
+    background: #063146;
+   user-select:none;
+}
+.slidebar ul a{
+  display: block;
+  height: 100%;
+ width:100%;
+  line-height: 65px;
+   font-size: 20px;
+  color: white;
+  padding-left: 40px;
+   box-sizing: border-box;
+   border-top: 1px solid rgba(255, 255, 255, .1);
+   border-bottom: 1px solid black;
+   transition:.4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+#check{
+  display:  none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointers;
+  background: #042331;
+  border-radius: 3px;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+   font-size: 35px;
+   color: white;
+  padding: 6px 12px;
+   transition: all .5s;
+}
+label #cancel{
+   z-index: 1111;
+   left: -195px;
+   top: 17px;
+   font-size: 30px;
+   color: #0a5275;
+   padding: 4px 9px;
+   transition: all .5s ease;
+}
+#check:checked~ .slidebar{
+  left: 0;
+}
+#check:checked~ label #btn{
+  left: 250px;
+   opacity: 0;
+   pointer-events: none;
+}
+#check:checked~ label #cancel{
+  left: 195px;
+}
+#check:checked~ section{
+ margin-left: 250px;
+}
+
+
+
+.swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    background: white;
+  }
+  .swiper-slide .imgbox
+  {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+  }
+  .swiper-slide .imgbox img{
+      width: 100%;
+  }
+  .swiper-slide .details
+  {
+      box-sizing: border-box;
+      padding: 20px;
+  }
+  .swiper-slide .details h3
+  {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 20px;
+  }
+  .swiper-slide .details h3 span{
+      font-size: 16px;
+      color: rgb(34, 32, 32);
+  }
+
+  button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    background-color: skyblue;
+}
+</style>
+</head>
+<body>
+  <div class="col login">
+    <a href="../loginpage/index.html"><button type="button" class="btn btn-signup">Sign Up</button></a>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="slidebar">
+      <header>&nbsp; THE BUSINESSS</header>
+      <ul >
+   <li><a href="../index.html"><i class="fas fa-home" >HOME</i></a></li>
+   <li><a href="../index.html#articles" ><i class="fas fa-newspaper" >ARTICLE</i></a></li>
+   <li><a href="../category/index.html" ><i class="fas fa-briefcase">CATEGORY</i></a></li>
+   <li><a href="../pages/index.html" ><i class="fas fa-briefcase">PAGES</i></a></li>
+   <li><a href="../index.html#late" ><i class="fas fa-briefcase">LATEST NEWS</i></a></li>
+   <li><a href="../intrested/formpage.html" ><i class="fas fa-briefcase">INTRESTED!</i></a></li>
+   <li><a href="../feedback/formpage.html" ><i class="fas fa-briefcase">FEEDBACK</i></a></li>
+   <li><a href="https://www.instagram.com/thebusinesss.in/" ><i class="fas fa-ad">INSTAGRAM</i></a></li>
+   <li><a href="../index.html#contactus"><i class="fas fa-mail-bulk" >CONTACT</i></a></li> 
+               </ul>
+       
+             </div>
+
+
+
+    </div> 
+    <br><br><br><br><br>
+    <div class="margin">
+    <h1>2020 has surpassed every previous year in cruelty</h1><br><br>
+    <h2>Australia Bushfire</h2>
+    <br><br><center><img src="./photos/fire.jpeg" width="380px" height="255px" ></center><br><br>
+    <p>New South wales and Victoria are the states affected by the fires. More than
+         five million hectares of forest and 2,500 houses are destroyed in New South Wales.
+          Two million hectares of forest is destroyed in Victoria. Vast of animals were died 
+          in this incident. One billion animals were killed and 33 people died in this
+           summer’s bushfire crisis. The flames were devasted to kangaroo island where 20,000 koalas and most of the kangaroo
+            were burned when they are alive. More than 20% of Australia’s forest was destroyed and 434 million
+            tons of CO2 emitted into the atmosphere, this would be approximately equal to three-quarters of Australian 
+            industry emitted in 2018-19. Million Australians affected by smoke. Professor Biddle from the Australian National University, was the lead researcher of  a poll conducted in January 2020, which found 11.3 million Australian adults were physically affected by smoke from the bushfires. Most of the people was threatened by fire. Bushfire was extinguished on 10 February  2020, It was about 79 days.</p>
+    <br><br><center><img src="./photos/aus 2.30.34 PM.png" width="380px" height="255px" ></center><br><br>
+    <br>
+    <h2>Turkey Earthquake</h2><br>
+    <p>31 people have been killed and 1,500 were injured in an earthquake in Turkey on 23 February 2020 between a magnitude between 5.4 to 6.3. This earthquake was centered the Sivrice town in Elazig. Earthquakes are common to Turkey; they are often affected by minor earthquakes and aftershocks occur daily. More than thousand buildings were destroyed and more than 200 people have no residents.</p>
+    <br><br><center><img src="./photos/turkey.jpeg" width="380px" height="255px" ></center><br><br>
+    <br>
+    <h2>COVID-19</h2>
+    <br><br><center><img src="./photos/covid19 2.30.34 PM.jpeg" width="380px" height="255px" ></center><br><br>
+    <p>COVID-19 appeared in Wuhan city in China, the first case was reported on 1 Dec 2019 and 
+        that had no link with seafood marked, but China’s Scientist had said this virus was
+         passed due to Bats which were taken by the people in Wuhan City. Incase if that
+          is the reason most of the people should be infected to the COVID-19 in China.
+           Now, China cities like Beijing and shanghai were in their daily routine where the other
+            countries were still in the lockdown situation. China started money investments on poor countries and they started business 
+           of selling oxygen cylinders and masks to other countries. But other countries lockdowns
+            are in process. United States of America and Italy are the most affect by COVID-19. Italy have 29,958 Deaths and 215,858 active cases in their country. America has 76,206 Deaths and 1,279,391 Active Cases. Most of the employers are jobless due to economy collapse.</p>
+            <br><p>In World</p>
+            <br><center><img src="./photos/covidtracker.jpeg" width="380px" height="255px" ></center><br><br>
+            <p>In India</p>
+            <br><center><img src="./photos/ct.jpeg" width="380px" height="255px" ></center><br><br>
+            <br>
+            <h2>Vizag Gas Leak</h2><br><br>
+            <p>Visakhapatnam gas leak had emitted more 1,800 tones of styrene which is flammable liquid that is used in the manufacturing of plastics. It had affected more than thousands of residents in five villages in Visakhapatnam. People from RRVpuram, Venkatapuram, Simhachalam and kamparapalem fell unconscious. Most of people with childrens were admitted to hospitals. This cause nasal irritation and effects on liver, kidney and eyes. This gas leak was detected at 3am in the morning so most of the people affected while there were in sleep. Immediatley they started making announcements by the police but many were already found unconscious.</p>
+            <br><br><center><img src="./photos/vizg.jpeg" width="380px" height="255px" ></center><br><br>
+            
+      </div>    
+    <br><br><br>
+<h1>News</h1>
+<br><br>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../topnews/photos/rocketx.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>Elon Musk's SpaceX Launched two NASA astronauts into Space<br><span>June 3, 2020</span></h3>
+              <center><a href="../topnews/spacex.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../topnews/photos/amazonazdc.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>Amazon to offer Permanent Jobs<br><span>May 30, 2020</span></h3>
+              <center><a href="../topnews/parmenent.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../topnews/photos/sinokorea.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>SINO-KOREAN RELATION<br><span>May 25, 2020</span></h3>
+              <center><a href="../topnews/sinokorea.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../topnews/photos/heli.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>Helicopter Money: New Zealand Giving Free Cash<br><span>May 24, 2020</span></h3>
+              <center><a href="../topnews/helicopter.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../topnews/photos/patanjali.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>Patanjali to launch e-commerce platform<br><span>May 19, 2020</span></h3>
+              <center><a href="../topnews/patanjali.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/mainpost/america 10.47.13 PM.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>SHATTERED AMERICAN EXCEPTIONALISM<br><span>May 14, 2020</span></h3>
+              <center><a href="../topnews/america.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/mainpost/fg.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>Employees work from home due to corona<br><span>May 12, 2020</span></h3>
+              <center><a href="../topnews/facebookgoogle.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/mainpost/vg2.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3> TOXIC DISASTER IN VISAKHAPATNAM<br><span>May 10, 2020</span></h3>
+          <center><a href="../topnews/vishakapatnam.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+        <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+            <div class="imgbox">
+                <img src="../assets/mainpost/loan.jpeg" width="300" height="300">
+              </div>
+              <div class="details">
+                  <h3>NIRAV MODI AND VIJAY MALYA LOANS ARE RELINQUISHED<br><span>May 04, 2020</span></h3>
+                  <center><a href="../topnews/loans.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+              </div>
+          </div>
+          <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+            <div class="imgbox">
+                <img src="../assets/mainpost/wiprocovid.jpeg" width="300" height="300">
+              </div>
+              <div class="details">
+                  <h3>WIPRO TOOK AN INITIATIVE AGAINST COVID-19<br><span>May 04, 2020</span></h3>
+                  <center><a href="../topnews/wiprocovid.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+              </div>
+          </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/mainpost/prominent.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>  A PROMINENT FAQS’ OF AN ECONOMIC DIRECTOR AND ECONOMIC PROFESSOR ABOUT THE EFFECT OF COVID-19 ON GLOBALISATION<br><span>May 04, 2020</span></h3>
+          <center><a href="../topnews/prominent.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/mainpost/pubg.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>PUBG (PlayerUnknown's Battle Ground)0.18.0 update<br><span>May 04, 2020</span></h3>
+              <center><a href="../topnews/pubg.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      
+    
+      
+      </div>
+</div>
+
+
+
+
+      <script type="text/javascript" src="../otherpages/untitled folder/swiper.min.js"></script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+
+</body>
+</html>

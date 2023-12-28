@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="agriculture, agri-trade">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberalised Agri-Trade</title>
+    <link rel="stylesheet" href="../otherpages/untitled folder/swiper.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style type="text/css">
+        body{
+            background-color: white;
+           
+        }
+        .margin{
+          margin-left: 25px;
+            margin-right: 25px;
+        }
+        p{
+          font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 17pt;
+            text-align: justify;
+            text-indent: 100px;
+        } 
+        h1{
+            font-family: Times;
+            font-style: italic;
+            font-size: 25pt;
+            text-align: center;
+        }
+        h2{
+            font-family: Times;
+            font-style: italic;
+            font-size: 22pt;
+        }
+        img{
+            align-items: center;
+        }
+        .login .btn-signup
+         {
+        background: var(--primary-gradient);
+        float: right;
+        margin: .8rem;
+        padding: .5rem 1.5rem;
+        border: none;
+        border-radius: 4rem;
+        background: #2b5876;
+        color: whitesmoke;
+        font-size: .7rem;
+        font-family: var(--Montserrat);
+        box-shadow: var(--primary-shadow);
+        cursor: pointer;
+        }
+.title{
+   position:absolute;
+   top: 15%;
+   left: 52%;
+   transform: translate(-50%,-50%);
+}
+.title h1{
+     font-size: 70px;
+      color:white;
+}
+
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+.slidebar{
+   position: fixed;
+   left: -250px;
+   width: 250px;
+   height: 100%;
+   background: #042331;
+   transition: all .5s ease;
+}
+.slidebar header{
+    font-size: 22px;
+     color: white;
+   text-align: left;
+   line-height: 70px;
+    background: #063146;
+   user-select:none;
+}
+.slidebar ul a{
+  display: block;
+  height: 100%;
+ width:100%;
+  line-height: 65px;
+   font-size: 20px;
+  color: white;
+  padding-left: 40px;
+   box-sizing: border-box;
+   border-top: 1px solid rgba(255, 255, 255, .1);
+   border-bottom: 1px solid black;
+   transition:.4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+#check{
+  display:  none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointers;
+  background: #042331;
+  border-radius: 3px;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+   font-size: 35px;
+   color: white;
+  padding: 6px 12px;
+   transition: all .5s;
+}
+label #cancel{
+   z-index: 1111;
+   left: -195px;
+   top: 17px;
+   font-size: 30px;
+   color: #0a5275;
+   padding: 4px 9px;
+   transition: all .5s ease;
+}
+#check:checked~ .slidebar{
+  left: 0;
+}
+#check:checked~ label #btn{
+  left: 250px;
+   opacity: 0;
+   pointer-events: none;
+}
+#check:checked~ label #cancel{
+  left: 195px;
+}
+#check:checked~ section{
+ margin-left: 250px;
+}
+
+
+
+.swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 450px;
+    background: white;
+  }
+  .swiper-slide .imgbox
+  {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+  }
+  .swiper-slide .imgbox img{
+      width: 100%;
+  }
+  .swiper-slide .details
+  {
+      box-sizing: border-box;
+      padding: 20px;
+  }
+  .swiper-slide .details h3
+  {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 20px;
+  }
+  .swiper-slide .details h3 span{
+      font-size: 16px;
+      color: rgb(34, 32, 32);
+  }
+
+  button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    background-color: skyblue;
+}
+</style>
+</head>
+<body>
+  <div class="col login">
+    <a href="../loginpage/index.html"><button type="button" class="btn btn-signup">Sign Up</button></a>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="slidebar">
+      <header>&nbsp; THE BUSINESSS</header>
+      <ul >
+   <li><a href="../index.html"><i class="fas fa-home" >HOME</i></a></li>
+   <li><a href="../index.html#articles" ><i class="fas fa-newspaper" >ARTICLE</i></a></li>
+   <li><a href="../category/index.html" ><i class="fas fa-briefcase">CATEGORY</i></a></li>
+   <li><a href="../pages/index.html" ><i class="fas fa-briefcase">PAGES</i></a></li>
+   <li><a href="../index.html#late" ><i class="fas fa-briefcase">LATEST NEWS</i></a></li>
+   <li><a href="../intrested/formpage.html" ><i class="fas fa-briefcase">INTRESTED!</i></a></li>
+   <li><a href="../feedback/formpage.html" ><i class="fas fa-briefcase">FEEDBACK</i></a></li>
+   <li><a href="https://www.instagram.com/thebusinesss.in/" ><i class="fas fa-ad">INSTAGRAM</i></a></li>
+   <li><a href="../index.html#contactus"><i class="fas fa-mail-bulk" >CONTACT</i></a></li> 
+               </ul>
+       
+             </div>
+
+
+
+    </div> 
+    <br><br><br><br><br>
+    <div class="margin">
+    <h1>Liberalised Agri-Trade</h1>
+    <br>
+    <br><center><img src="../articles/photos/agri1.jpeg" width="380px" height="265px" ></center> <br><br>
+    <center><img src="../articles/photos//agri2.jpeg" width="380px" height="265px" ></center> <br><br>
+    <p> T​he best highlight of the package for agriculture announced by
+        Union Finance Minister Nirmala Sitharaman is the decision to liberalise agricultural 
+        trade and marketing by creating a legal framework and mechanisms to give 
+        the farmer freedom and control over his produce. We all know that the manufacturer of soap can sell his soaps anywhere and a manufacturer of chairs can sell his chairs anywhere but why there is no freedom for the agriculture market. The main theme of these liberalised markets is that the farmer can sell his products anywhere without any restrictions. The existing restrictions on sale of agricultural commodities and the inter-state barriers in trade are to be done away with, and the idea of “one nation, one market’’ will in effect be extended to agriculture. The Agricultural Produce Marketing Committee controls the trade currently, and farmers have to sell their produce there. Once the new legal framework is in place, they will be free to sell their produce to anyone, anywhere in India, and not to just one licensee. This proves theoretically correct but one should know the state of our agriculture sector.The farmer who produces should get a fair price andFood security for the common man. Farmers need income and people need food security. What's going to happen in practice? We know most of the indian farmers are having less than 5 acre or even without land but doing agriculture on lease without proper lease agreement with LandLord and he uses most of the crop for his utility and rest he may sell in the markets .</p><br>
+        <br><p> How can he go and sell in other states or how he can store his goods ? He can't store his goods either in houses or in farm lands ,In Fact there are no proper cold warehouses in villages . Now India is not only giving chance for commision agents to sell in markets but Now it is also giving chance to sell to Multinational Companies, reputed Indian corporates like Reliance to procure & sell their goods directly ,But due to this most of the small farmers may won’t get benefit.These companies procure from farmers at lower price with having facility of storage are able to sell at higher prices at the appropriate time.This causes great loss to the farmer and he will never get a fair chance to sell his goods at fair price. For example if we consider an onion farmer he will be paid , say 5 rs a kilo but an ultimate consumer is paying 30 rs per kilo in the market because of the involvement of commission agents. If multinational companies involved in the picture think about the ultimate price of the onion in the market! . Naturally MNCs with an international market never owe to our national food security they sell at a good price around the world wherever it is ..... to get higher profit . History has witnessed food starvation in latin american countries as american MNCs used the food grains for pet dogs . Thus the fate of the Indian farmers is being bet in the hands of MNCs.</p>
+    
+    </div>
+
+                              <br><br><br>
+<h1>Articles</h1>
+<br><br>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../articles/photos/pasport1.jpeg" width="300" height="260">
+        </div>
+        <div class="details">
+            <h3>HOW HAS PASSPORT BEEN INVENTED?<br><span>June 14, 2020</span></h3>
+          <center><a href="../articles/passport.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../articles/photos/startup1.jpeg" width="300" height="260">
+        </div>
+        <div class="details">
+            <h3>List of Famous Failed Businesses and startups in India – 2019<br><span>May 29, 2020</span></h3>
+          <center><a href="../articles/startup.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../articles/photos/aero8.jpeg" width="300" height="260">
+        </div>
+        <div class="details">
+            <h3>Things we should not eat/drink during air travel<br><span>May 21, 2020</span></h3>
+          <center><a href="../articles/aeroplane.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+        <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+            <div class="imgbox">
+              <img src="../assets/article pics/car1.jpeg" width="300" height="300">
+            </div>
+            <div class="details">
+                <h3> LUXURIOUS CARS OWNED BY TOLLYWOOD ACTORS<br><span>May 17, 2020</span></h3>
+              <center><a href="../articles/cars.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+               
+            </div>
+        </div>
+        <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+            <div class="imgbox">
+              <img src="../assets/article pics/up.jpeg.png" width="300" height="300">
+            </div>
+            <div class="details">
+                <h3>Top 5 Freelancing Websites in India<br><span>May 04, 2020</span></h3>
+              <center><a href="../articles/freelancing.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+               
+            </div>
+        </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/article pics/mb.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>Top 4 richest persons in India <br><span>May 04, 2020</span></h3>
+              <center><a href="../articles/rich.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/article pics/forest.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3> URBANISATION IN MANGROVES<br><span>May 08, 2020</span></h3>
+          <center><a href="../articles/kakinada.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+          <div class="imgbox">
+            <img src="../assets/article pics/netbanking.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3> DIGITAL PAYMENTS DUE TO CORONA LOCKDOWN<br><span>May 04, 2020</span></h3>
+            <center><a href="../articles/onlinepayment.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+             
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/article pics/whatsapp.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>UNINSTALLATION OF WHATSAPP<br><span>May 04, 2020</span></h3>
+              <center><a href="../articles/whatsapp.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/article pics/wbdp.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>BEST WEB SERIES TO WATCH<br><span>May 04, 2020</span></h3>
+          <center><a href="../articles/webseries.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/article pics/freeroad.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>IMPACT OF CORONA
+                ON TRAVEL AND TOURISM SECTOR <br><span>May 04, 2020</span></h3>
+              <center><a href="../articles/tourism.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/article pics/tataair.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>  RATAN TATA A BUSINESS KOHINOOR<br><span>May 04, 2020</span></h3>
+              <center><a href="../articles/Ratantata.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/article pics/coronapost.jpg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3> Corona virus 2019 formally known as COVID-19 was commenced in Wuhan city, China<br><span>May 04, 2020</span></h3>
+          <center><a href="../articles/covid.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../assets/article pics/wos2.jpeg.png" width="300" height="300">
+      </div>
+      <div class="details">
+          <h3>Wolf Of Wall Street <br><span>May 04, 2020</span></h3>
+        <center><a href="../articles/wos.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+    </div>
+    </div>
+      
+    
+      
+      </div>
+</div>
+
+
+
+
+      <script type="text/javascript" src="../otherpages/untitled folder/swiper.min.js"></script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+
+</body>
+</html>
+
+    
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="online payment due to corona, oniline payment, online payment article">
+    <meta http-equiv="refresh" content="30">
+    <title>online payments</title>
+    <link rel="stylesheet" href="../otherpages/untitled folder/swiper.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style type="text/css">
+        body{
+            background-color: white;
+           
+        }
+        .margin{
+          margin-left: 25px;
+            margin-right: 25px;
+        }
+        p{
+          font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 17pt;
+            text-align: justify;
+            text-indent: 100px;
+        } 
+        h1{
+            font-family: Times;
+            font-style: italic;
+            font-size: 25pt;
+            text-align: center;
+        }
+        h2{
+            font-family: Times;
+            font-style: italic;
+            font-size: 22pt;
+        }
+        img{
+            align-items: center;
+        }
+        .login .btn-signup
+         {
+        background: var(--primary-gradient);
+        float: right;
+        margin: .8rem;
+        padding: .5rem 1.5rem;
+        border: none;
+        border-radius: 4rem;
+        background: #2b5876;
+        color: whitesmoke;
+        font-size: .7rem;
+        font-family: var(--Montserrat);
+        box-shadow: var(--primary-shadow);
+        cursor: pointer;
+        }
+
+
+
+
+
+ .title{
+   position:absolute;
+   top: 15%;
+   left: 52%;
+   transform: translate(-50%,-50%);
+}
+.title h1{
+     font-size: 70px;
+      color:white;
+}
+
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+.slidebar{
+   position: fixed;
+   left: -250px;
+   width: 250px;
+   height: 100%;
+   background: #042331;
+   transition: all .5s ease;
+}
+.slidebar header{
+    font-size: 22px;
+     color: white;
+   text-align: left;
+   line-height: 70px;
+    background: #063146;
+   user-select:none;
+}
+.slidebar ul a{
+  display: block;
+  height: 100%;
+ width:100%;
+  line-height: 65px;
+   font-size: 20px;
+  color: white;
+  padding-left: 40px;
+   box-sizing: border-box;
+   border-top: 1px solid rgba(255, 255, 255, .1);
+   border-bottom: 1px solid black;
+   transition:.4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+#check{
+  display:  none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointers;
+  background: #042331;
+  border-radius: 3px;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+   font-size: 35px;
+   color: white;
+  padding: 6px 12px;
+   transition: all .5s;
+}
+label #cancel{
+   z-index: 1111;
+   left: -195px;
+   top: 17px;
+   font-size: 30px;
+   color: #0a5275;
+   padding: 4px 9px;
+   transition: all .5s ease;
+}
+#check:checked~ .slidebar{
+  left: 0;
+}
+#check:checked~ label #btn{
+  left: 250px;
+   opacity: 0;
+   pointer-events: none;
+}
+#check:checked~ label #cancel{
+  left: 195px;
+}
+#check:checked~ section{
+ margin-left: 250px;
+}
+
+
+
+.swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 460px;
+    background: white;
+  }
+  .swiper-slide .imgbox
+  {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+  }
+  .swiper-slide .imgbox img{
+      width: 100%;
+  }
+  .swiper-slide .details
+  {
+      box-sizing: border-box;
+      padding: 20px;
+  }
+  .swiper-slide .details h3
+  {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 20px;
+  }
+  .swiper-slide .details h3 span{
+      font-size: 16px;
+      color: rgb(34, 32, 32);
+  }
+  button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    background-color: skyblue;
+}
+
+</style>
+</head>
+<body>
+  <div class="col login">
+    <a href="../loginpage/index.html"><button type="button" class="btn btn-signup">Sign Up</button></a>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="slidebar">
+      <header>&nbsp; THE BUSINESSS</header>
+      <ul >
+   <li><a href="../index.html"><i class="fas fa-home" >HOME</i></a></li>
+   <li><a href="../index.html#articles" ><i class="fas fa-newspaper" >ARTICLE</i></a></li>
+   <li><a href="../category/index.html" ><i class="fas fa-briefcase">CATEGORY</i></a></li>
+   <li><a href="../pages/index.html" ><i class="fas fa-briefcase">PAGES</i></a></li>
+   <li><a href="../index.html#late" ><i class="fas fa-briefcase">LATEST NEWS</i></a></li>
+   <li><a href="../intrested/formpage.html" ><i class="fas fa-briefcase">INTRESTED!</i></a></li>
+   <li><a href="../feedback/formpage.html" ><i class="fas fa-briefcase">FEEDBACK</i></a></li>
+   <li><a href="https://www.instagram.com/thebusinesss.in/" ><i class="fas fa-ad">INSTAGRAM</i></a></li>
+   <li><a href="../index.html#contactus"><i class="fas fa-mail-bulk" >CONTACT</i></a></li> 
+               </ul>
+       
+             </div>
+
+
+    </div> 
+    <br><br><br><br><br>
+    <div class="margin">
+    <h1>DIGITAL PAYMENTS DUE TO CORONA LOCKDOWN</h1>
+
+
+    <h2>Why digital payments slump as non-essential services dry up during corona lockdown?</h2>
+    <p>As the nationwide lockdown hits the 34-day mark, a report by fintech player RazorPay suggests that digital payments and transactions have seen a significant 30% dip in the course of the lockdown. The ‘The Era of Rising Fintech’ report is based on transactions on Razorpay’s platform between February 24 and March 23 (pre-lockdown) and March 24 to April 23 (post- lockdown).</p> 
+<p> In the special coverage on coronavirus on DH, it is also being said that the unified payments interface (UPI) transactions saw a 37% fall, cards 30%, and net banking 28% fall during the lockdown, compared to the previous month. However, in terms of volume, UPI made the highest contribution of 43%, followed by debit and credit cards with 39% and netbanking with 10%.Among the major UPI payment players, Paytm fell by more than 47%, Google Pay at 43% and PhonePe at 37%.</p> 
+<p>  From the report which is collected by DH shows that the online spends on utility bills, media and entertainment, as well as donations to NGOs saw a sharp jump. “Sectors such as utilities (Bill Payments), IT & software and media and entertainment saw a growth of 73%, 32% and 25% respectively.</p> 
+<p> This lockdown has resulted in a huge decline in logistics as well as travel sector, as expected.The report states that transactions in logistics dropped by a whopping 96% due to gaps in supply chain. This is a very huge loss for the logistic sector. This results in a great loss, due to this lockdown.</p> 
+<p> Not only the logistic sector, but also the travel sector saw an 87% slump, followed by real estate by 83%, food and beverage by 68%, and grocery by 54%. While digital transactions in Ahmedabad, Mumbai and Chennai took a hit, Karnataka (with 21%), Maharashtra (16%) and Telangana (11%) saw the highest contribution during the lockdown.</p> 
+    
+<p>  Significantly, mobile wallet transactions, particularly in Tier-2 cities, registered a surge in the last 30 days, with transactions through JioMoney increasing by 66%, AmazonPay by 63%, and Paytm by 43%.</p> 
+    <center><img src="./photos/phone.jpeg" width="380px" height="285px"></center>
+    <p>Harshil Mathur, CEO and Co-founder, Razorpay, said: “A significant drop of 30% in online payments in a month is something we are seeing for the first time after demonetisation.” He added that in the first two weeks of March before lockdown, the overall online spending increased by about 10%, but later saw a dip due to social distancing norms that resulted in more people staying indoors. According to Mathur, while the pandemic continues to create uncertainty on a number of fronts, it is also a turning point for the fintech industry in many ways, one such being the tremendous adoption in the use of digital payments, especially in Tier 2 & 3 cities.”</p> 
+<p> Looking at the future, Mathur is optimistic. He added, “I believe this is a huge opportunity for fintech companies, some of them may have to Looking at the future, Mathur is optimistic. He added, “I believe this is a huge opportunity for fintech companies, some of them may have to reexamine their business models after Covid-19, prioritising growth and customer acquisition over profitability.</p> 
+<center><img src="./photos/ceo.jpeg" width="380px" height="300px"></center>
+<p style="text-indent: 130px;">Mr.Harshil Mathur- Founder and Chief Executive Officer @ Razorpay</p>
+</p>
+    </div>
+
+<br><br><br>
+<h1>Articles</h1>
+<br><br>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../articles/photos/pasport1.jpeg" width="300" height="260">
+      </div>
+      <div class="details">
+          <h3>HOW HAS PASSPORT BEEN INVENTED?<br><span>June 14, 2020</span></h3>
+        <center><a href="../articles/passport.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+  </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../articles/photos/startup1.jpeg" width="300" height="260">
+      </div>
+      <div class="details">
+          <h3>List of Famous Failed Businesses and startups in India – 2019<br><span>May 29, 2020</span></h3>
+        <center><a href="../articles/startup.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+  </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../articles/photos/aero8.jpeg" width="300" height="260">
+      </div>
+      <div class="details">
+          <h3>Things we should not eat/drink during air travel<br><span>May 21, 2020</span></h3>
+        <center><a href="../articles/aeroplane.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+  </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../articles/photos/agri1.jpeg" width="300" height="300">
+      </div>
+      <div class="details">
+          <h3>Liberalised Agri-Trade<br><span>May 20, 2020</span></h3>
+        <center><a href="../articles/agriculture.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+  </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../assets/article pics/up.jpeg.png" width="300" height="300">
+      </div>
+      <div class="details">
+          <h3> Top 5 Freelancing Websites in India<br><span>May 04, 2020</span></h3>
+        <center><a href="../articles/freelancing.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+  </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../assets/article pics/car1.jpeg" width="300" height="300">
+      </div>
+      <div class="details">
+          <h3> LUXURIOUS CARS OWNED BY TOLLYWOOD ACTORS<br><span>May 04, 2020</span></h3>
+        <center><a href="../articles/cars.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+  </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+          <img src="../assets/article pics/mb.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>Top 4 richest persons in India <br><span>May 04, 2020</span></h3>
+            <center><a href="../articles/rich.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../assets/article pics/forest.jpeg" width="300" height="300">
+      </div>
+      <div class="details">
+          <h3> URBANISATION IN MANGROVES<br><span>May 08, 2020</span></h3>
+        <center><a href="../articles/kakinada.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+  </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/article pics/coronapost.jpg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3> Corona virus 2019 formally known as COVID-19 was commenced in Wuhan city, China<br><span>May 04, 2020</span></h3>
+          <center><a href="../articles/covid.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+          <img src="../assets/article pics/whatsapp.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>UNINSTALLATION OF WHATSAPP<br><span>May 04, 2020</span></h3>
+            <center><a href="../articles/whatsapp.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+          <img src="../assets/article pics/freeroad.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>IMPACT OF CORONA
+              ON TRAVEL AND TOURISM SECTOR <br><span>May 04, 2020</span></h3>
+            <center><a href="../articles/tourism.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+      <div class="imgbox">
+        <img src="../assets/article pics/wbdp.jpeg" width="300" height="300">
+      </div>
+      <div class="details">
+          <h3>BEST WEB SERIES TO WATCH<br><span>May 04, 2020</span></h3>
+        <center><a href="../articles/webseries.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+         
+      </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+    <div class="imgbox">
+      <img src="../assets/article pics/tataair.jpeg" width="300" height="300">
+    </div>
+    <div class="details">
+        <h3>  RATAN TATA A BUSINESS KOHINOOR<br><span>May 04, 2020</span></h3>
+        <center><a href="../articles/Ratantata.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+    </div>
+</div>
+  <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+    <div class="imgbox">
+      <img src="../assets/article pics/wos2.jpeg.png" width="300" height="300">
+    </div>
+    <div class="details">
+        <h3>Wolf Of Wall Street <br><span>May 04, 2020</span></h3>
+      <center><a href="../articles/wos.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+       
+    </div>
+  </div>
+  </div>
+    
+  
+    
+    </div>
+</div>
+
+
+
+
+
+      <script type="text/javascript" src="../otherpages/untitled folder/swiper.min.js"></script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+
+</body>
+</html>
+
+    
+</body>
+</html>
+</body>
+</html>

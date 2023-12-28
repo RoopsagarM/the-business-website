@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon to offer Permanent Jobs</title>
+    <link rel="stylesheet" href="../otherpages/untitled folder/swiper.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style type="text/css">
+        body{
+            background-color: white;
+        }
+        .margin{
+          margin-left: 25px;
+            margin-right: 25px;
+        }
+        p{
+            font-family: Times;
+            font-style: italic;
+            font-size: 17pt;
+            text-align: justify;
+            text-indent: 100px;
+        } 
+        h1{
+            font-family: Times;
+            font-style: italic;
+            font-size: 25pt;
+            text-align: center;
+        }
+        h2{
+            font-family: Times;
+            font-style: italic;
+            font-size: 22pt;
+        }
+        img{
+            align-items: center;
+        }
+        .login .btn-signup
+         {
+        background: var(--primary-gradient);
+        float: right;
+        margin: .8rem;
+        padding: .5rem 1.5rem;
+        border: none;
+        border-radius: 4rem;
+        background: #2b5876;
+        color: whitesmoke;
+        font-size: .7rem;
+        font-family: var(--Montserrat);
+        box-shadow: var(--primary-shadow);
+        cursor: pointer;
+        }
+
+
+
+
+
+ .title{
+   position:absolute;
+   top: 15%;
+   left: 52%;
+   transform: translate(-50%,-50%);
+}
+.title h1{
+     font-size: 70px;
+      color:white;
+}
+
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+.slidebar{
+   position: fixed;
+   left: -250px;
+   width: 250px;
+   height: 100%;
+   background: #042331;
+   transition: all .5s ease;
+}
+.slidebar header{
+    font-size: 22px;
+     color: white;
+   text-align: left;
+   line-height: 70px;
+    background: #063146;
+   user-select:none;
+}
+.slidebar ul a{
+  display: block;
+  height: 100%;
+ width:100%;
+  line-height: 65px;
+   font-size: 20px;
+  color: white;
+  padding-left: 40px;
+   box-sizing: border-box;
+   border-top: 1px solid rgba(255, 255, 255, .1);
+   border-bottom: 1px solid black;
+   transition:.4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+#check{
+  display:  none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointers;
+  background: #042331;
+  border-radius: 3px;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+   font-size: 35px;
+   color: white;
+  padding: 6px 12px;
+   transition: all .5s;
+}
+label #cancel{
+   z-index: 1111;
+   left: -195px;
+   top: 17px;
+   font-size: 30px;
+   color: #0a5275;
+   padding: 4px 9px;
+   transition: all .5s ease;
+}
+#check:checked~ .slidebar{
+  left: 0;
+}
+#check:checked~ label #btn{
+  left: 250px;
+   opacity: 0;
+   pointer-events: none;
+}
+#check:checked~ label #cancel{
+  left: 195px;
+}
+#check:checked~ section{
+ margin-left: 250px;
+}
+
+
+
+.swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    background: white;
+  }
+  .swiper-slide .imgbox
+  {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+  }
+  .swiper-slide .imgbox img{
+      width: 100%;
+  }
+  .swiper-slide .details
+  {
+      box-sizing: border-box;
+      padding: 20px;
+  }
+  .swiper-slide .details h3
+  {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 20px;
+  }
+  .swiper-slide .details h3 span{
+      font-size: 16px;
+      color: rgb(34, 32, 32);
+  }
+
+  button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    background-color: skyblue;
+}
+</style>
+</head>
+<body>
+  <div class="col login">
+    <a href="../loginpage/index.html"><button type="button" class="btn btn-signup">Sign Up</button></a>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="slidebar">
+      <header>&nbsp; THE BUSINESSS</header>
+      <ul >
+   <li><a href="../index.html"><i class="fas fa-home" >HOME</i></a></li>
+   <li><a href="../index.html#articles" ><i class="fas fa-newspaper" >ARTICLE</i></a></li>
+   <li><a href="../category/index.html" ><i class="fas fa-briefcase">CATEGORY</i></a></li>
+   <li><a href="../pages/index.html" ><i class="fas fa-briefcase">PAGES</i></a></li>
+   <li><a href="../index.html#late" ><i class="fas fa-briefcase">LATEST NEWS</i></a></li>
+   <li><a href="../intrested/formpage.html" ><i class="fas fa-briefcase">INTRESTED!</i></a></li>
+   <li><a href="../feedback/formpage.html" ><i class="fas fa-briefcase">FEEDBACK</i></a></li>
+   <li><a href="https://www.instagram.com/thebusinesss.in/" ><i class="fas fa-ad">INSTAGRAM</i></a></li>
+   <li><a href="../index.html#contactus"><i class="fas fa-mail-bulk" >CONTACT</i></a></li> 
+               </ul>
+       
+             </div>
+
+
+
+    </div> 
+    <br><br><br><br><br>
+    <div class="margin">
+    <h1>Amazon to offer Permanent Jobs</h1><br>
+    <h3 style="text-align: right; padding-right: 20px;"><i class="fas fa-pen">&nbsp;&nbsp;Meghana karlapalem</i></h3><br><br>
+        <center><img src="../topnews/photos/amazonazdc.jpeg" width="380px" height="255px" ></center><br><br>
+     <p>Amazon has recently announced that it will offer 125,000 of its temporary workers the permanent job positions. The decision is made to cope with the demand for its online shopping services during the pandemic.</p><br>
+     <p>The company blog reads, “Like other companies, we hired these individuals for seasonal roles to meet a surge in demand and, for many, there was the hope of returning back to their previous companies once states began to reopen. As the long-term picture becomes more clear, we're providing the opportunity for 125,000 of those who came on with us seasonally to stay with Amazon and transition into a regular, full-time role beginning in June.” 
+        With the restrictions imposed in March due to lockdown and physical stores shuttering down all around the world, Amazon hired over 175,000 employees for newly-created positions. Now, with this new move, the company has ensured its strong position in the e-commerce industry. Also, Amazon had recently announced that it was among the first large employers to offer a minimum US wage of $15 (roughly Rs. 1,130) an hour, well above the federal requirement, along with other benefits.
+     </p>
+      
+    </div>    
+    <br><br><br>
+<h1>News</h1>
+<br><br>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+            <div class="imgbox">
+                <img src="../topnews/photos/rocketx.jpeg" width="300" height="300">
+              </div>
+              <div class="details">
+                  <h3>Elon Musk's SpaceX Launched two NASA astronauts into Space<br><span>June 3, 2020</span></h3>
+                  <center><a href="../topnews/spacex.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+              </div>
+          </div>
+        <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+            <div class="imgbox">
+                <img src="../topnews/photos/heli.jpeg" width="300" height="300">
+              </div>
+              <div class="details">
+                  <h3>Helicopter Money: New Zealand Giving Free Cash<br><span>May 24, 2020</span></h3>
+                  <center><a href="../topnews/helicopter.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+              </div>
+          </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../topnews/photos/patanjali.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>Patanjali to launch e-commerce platform<br><span>May 19, 2020</span></h3>
+              <center><a href="../topnews/patanjali.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/mainpost/america 10.47.13 PM.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>SHATTERED AMERICAN EXCEPTIONALISM<br><span>May 14, 2020</span></h3>
+              <center><a href="../topnews/america.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/mainpost/fg.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>Employees work from home due to corona<br><span>May 12, 2020</span></h3>
+              <center><a href="../topnews/facebookgoogle.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/mainpost/vg2.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3> TOXIC DISASTER IN VISAKHAPATNAM<br><span>May 10, 2020</span></h3>
+          <center><a href="../topnews/vishakapatnam.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/mainpost/wiprocovid.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>WIPRO TOOK AN INITIATIVE AGAINST COVID-19<br><span>May 04, 2020</span></h3>
+              <center><a href="../topnews/wiprocovid.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/mainpost/disasters.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>2020 has surpassed every previous year in cruelty<br><span>May 04, 2020</span></h3>
+              <center><a href="../topnews/disasters.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+        <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+            <div class="imgbox">
+                <img src="../assets/mainpost/loan.jpeg" width="300" height="300">
+              </div>
+              <div class="details">
+                  <h3>NIRAV MODI AND VIJAY MALYA LOANS ARE RELINQUISHED<br><span>May 04, 2020</span></h3>
+                  <center><a href="../topnews/loans.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+              </div>
+          </div>
+          
+      <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+          <img src="../assets/mainpost/prominent.jpeg" width="300" height="300">
+        </div>
+        <div class="details">
+            <h3>  A PROMINENT FAQS’ OF AN ECONOMIC DIRECTOR AND ECONOMIC PROFESSOR ABOUT THE EFFECT OF COVID-19 ON GLOBALISATION<br><span>May 04, 2020</span></h3>
+          <center><a href="../topnews/prominent.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+           
+        </div>
+    </div>
+    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300" >
+        <div class="imgbox">
+            <img src="../assets/mainpost/pubg.jpeg" width="300" height="300">
+          </div>
+          <div class="details">
+              <h3>PUBG (PlayerUnknown's Battle Ground)0.18.0 update<br><span>May 04, 2020</span></h3>
+              <center><a href="../topnews/pubg.html"> <button class="btn post-btn">Click Here &nbsp; <i class="fas fa-arrow-right"></i></button></a></center>
+          </div>
+      </div>
+      
+    
+      
+      </div>
+</div>
+
+
+
+
+      <script type="text/javascript" src="../otherpages/untitled folder/swiper.min.js"></script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+
+</body>
+</html>
